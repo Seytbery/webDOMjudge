@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+    margin: 0px;
+    padding: 0px; }
+
+html {
+    background-color: #F2F2F2; }
+
+* {
+    margin: 0px;
+    padding: 0px; }
+
+html {
+    background-color: #F2F2F2; }
+
+header {
+    background-color: #F7941D;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+header img {
+    min-width: 150px;
+    width: 15%;
+    height: 15%; }
+
+.login {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px; }
+.login #loginInfo {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    color: #F2F2F2; }
+.login button {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    color: #F2F2F2;
+    padding: 0.5em 1em;
+    background: #4D4D4D;
+    border: 2px solid #4D4D4D;
+    border-radius: 6px;
+    transition-duration: 300ms; }
+.login button:hover {
+    background-color: #F2F2F2;
+    color: #F7941D;
+    cursor: pointer; }
+
+main {
+    background-color: #F2F2F2;
+    padding: 10px; }
+
+.problemList {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+
+.problemList {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #4D4D4D;
+    border-radius: 6px;
+    padding: 0.25em;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    color: #4D4D4D; }
+.problemList .problemBtn {
+    color: #F2F2F2;
+    padding: 0.25em 1em;
+    background: #4D4D4D;
+    border: 2px solid #4D4D4D;
+    border-radius: 6px;
+    transition-duration: 300ms; }
+.problemList .problemBtn:hover {
+    background-color: #F2F2F2;
+    color: #F7941D;
+    cursor: pointer; }
+.problemList .correctResult {
+    background-color: green; }
+.problemList .wrongResult {
+    background-color: red; }
+.problemList .selected {
+    background-color: #F2F2F2;
+    color: #F7941D; }
+.problemList .selected:hover {
+    cursor: default; }
+
+.problemInteraction {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 2%; }
+.problemInteraction .problemInfo {
+    grid-column: 1;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px; }
+.problemInteraction .problemInfo #ShowProblemPdfButton {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    color: #F2F2F2;
+    border: 2px #4D4D4D;
+    padding: 0.25em 1em;
+    background: #4D4D4D;
+    border-radius: 6px;
+    transition-duration: 300ms; }
+.problemInteraction .problemInfo #ShowProblemPdfButton:hover {
+    background-color: #F7941D;
+    color: #F2F2F2;
+    cursor: pointer; }
+.problemInteraction .problemInfo #compilationInfo {
+    padding-top: 1em;
+    text-align: end; }
+.problemInteraction .problemInfo #compilationInfo th, .problemInteraction .problemInfo #compilationInfo td {
+    padding: 0.2em 1em; }
+.problemInteraction .problemInfo #compilationInfo .wrongResult {
+    color: red; }
+.problemInteraction .problemInfo #compilationInfo .correctResult {
+    color: green; }
+.problemInteraction .solution {
+    grid-column: 2;
+    height: 70vh; }
+.problemInteraction .solution #solutionArea {
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+    font-size: 16px;
+    color: black;
+    border: 2px solid #4D4D4D;
+    background-color: white;
+    outline: none;
+    resize: none;
+    min-width: 100%;
+    width: 100%;
+    height: 100%; }
+.problemInteraction .solution #languageSelect {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #4D4D4D;
+    padding: 0.25em 1em;
+    background: #F2F2F2;
+    border-radius: 6px;
+    transition-duration: 300ms; }
+.problemInteraction .solution #submitSolution {
+    margin-left: 10px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    color: #F2F2F2;
+    border: 2px #4D4D4D;
+    padding: 0.25em 1em;
+    background: #4D4D4D;
+    border-radius: 6px;
+    transition-duration: 300ms; }
+.problemInteraction .solution #submitSolution:hover {
+    background-color: #F7941D;
+    color: #F2F2F2;
+    cursor: pointer; }
+
+/*# sourceMappingURL=contest.css.map */

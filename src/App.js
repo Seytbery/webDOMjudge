@@ -1,10 +1,14 @@
-import './App.css';
+import Header from "./components/header";
+import Main from "./components/main";
+import Form from "./components/form";
 
 function App() {
   return (
-    <div className="App">
-
-    </div>
+      <div>
+        <Header/>
+        <Main/>
+        <Form/>
+      </div>
   );
 }
 
