@@ -16,7 +16,7 @@ html {
 
 header {
     background-color: #F7941D;
-    padding-right: 20px;
+    padding-right: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
@@ -24,7 +24,16 @@ header img {
     min-width: 150px;
     width: 15%;
     height: 15%; }
-
+.close-icon {
+    display: block;
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+    fill: #4D4D4D;}
+.close-icon:hover{
+    fill: #F7941D;
+    cursor: pointer;
+}
 .login {
     display: flex;
     flex-direction: row;
